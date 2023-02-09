@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #food {
+            height: 500px;
+            width: 900px;
+            border: 1px solid brown;
+            box-shadow: 1px 1px 1px 1px grey;
+            margin-left: 200px;
+            margin-top: 100px;
+            padding-left: 100px;
+
+        }
+
+        #foodtab {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 3;
+
+        }
+
+        #foh1 {
+            margin-left: 350px;
+            color: brown;
+            font-family: Kristen ITC;
+        }
+        img {
+            padding: 30px;
+        }
+
+        #cap {
+            margin-left: 20px;
+            padding-left: 20px;
+            color: brown;
+            font-family: Kristen ITC;
+        }
+        #bevtab{
+            height: 500px;
+            width: 900px;
+            border: 1px solid brown;
+            box-shadow: 1px 1px 1px 1px grey;
+            margin-left: 200px;
+            margin-top: 80px;
+            padding-left: 100px;
+
+        }
+        #foh2{
+            margin-left: 350px;
+            color: brown;
+            font-family: Kristen ITC;
+        }
+        #coffee{
+            margin-top: -100px;   
+        }
+        #menu{
+            margin-left: 650px;
+            margin-top: 80px;
+            color: brown;
+            font-family: Kristen ITC;
+        }
+        .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        color: white;
+        border-radius: 25px;
+        width: 150px;
+        padding: 20px;
+        font-family: kristen ITC;
+        font-size: 30px;
+       
+        font-weight: 900;
+    }
+    i{
+        color:  brown;
+        font-size: 50px;
+        position: absolute;
+        top: 30px;
+        left: 120px;
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+       }
+       a{
+    text-decoration: none;
+    color: brown;
+   }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <img src="image.jpeg" width="100" height="100">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="dropdown-content"> 
+            <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/home.html">Home</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/ourstory.html">Our story</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/flex.html">Menu</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/offers.html">Offer</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/gallery.html">Gallery</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/reachus.html">Reach us</a></li>
+    </ul>
+    </div>
+    <h1 id="menu">MENU</h1>
+    <div id="food">
+        <div>
+            <h1 id="foh1">FOOD</h1>
+        </div>
+        <div id="fodtab">
+
+
+            <img src="https://www.onceuponachef.com/images/2020/02/Double-Chocolate-Muffins.jpg"
+                alt="https://www.onceuponachef.com/images/2020/02/Double-Chocolate-Muffins.jpg" height="200px"
+                width="200px">
+            <img src="https://www.seriouseats.com/thmb/9ZS_gvE751_BYfh8FV87CcapGjk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2011__08__20110817-166611-flour-croissants-fb708f60c6b943588a4407033182d8a0.jpg"
+                alt="https://www.seriouseats.com/thmb/9ZS_gvE751_BYfh8FV87CcapGjk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2011__08__20110817-166611-flour-croissants-fb708f60c6b943588a4407033182d8a0.jpg"
+                height="200px" width="200px">
+            <img src="https://content.jdmagicbox.com/comp/hyderabad/t9/040pxx40.xx40.190128203142.p8t9/catalogue/the-belgian-waffle-co-somajiguda-hyderabad-waffle-centres-mmhxj8rpzu.jpg"
+                alt="https://content.jdmagicbox.com/comp/hyderabad/t9/040pxx40.xx40.190128203142.p8t9/catalogue/the-belgian-waffle-co-somajiguda-hyderabad-waffle-centres-mmhxj8rpzu.jpg"
+                height="200px" width="200px">
+            <div id="cap">
+                <label for="" style="margin-left: 30px;">Muffins - Rs: 50</label>
+                <label for="" style="margin-left: 150px;">Croissants - Rs: 100</label>
+                <label for="" style="margin-left: 140px;">Waffles - Rs: 150</label>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="bev">
+        <div>
+
+        </div>
+        <div id="bevtab">
+            <h1 id="foh2">Beverages</h1>
+
+
+
+            <img src="https://sprudge.com/wp-content/uploads/2014/08/5-Los-Angeles-Coffee-Drinks-tierramia.jpg"
+                alt="https://sprudge.com/wp-content/uploads/2014/08/5-Los-Angeles-Coffee-Drinks-tierramia.jpg" height="200px"
+                width="200px" id="coffee">
+            <img src="https://c4.wallpaperflare.com/wallpaper/722/49/263/tea-beverages-mint-leaves-lemons-wallpaper-preview.jpg"
+                alt="https://c4.wallpaperflare.com/wallpaper/722/49/263/tea-beverages-mint-leaves-lemons-wallpaper-preview.jpg"
+                height="200px" width="200px">
+            <img src="https://feelgoodfoodie.net/wp-content/uploads/2021/11/how-to-make-hot-chocolate-7.jpg"
+                alt="https://feelgoodfoodie.net/wp-content/uploads/2021/11/how-to-make-hot-chocolate-7.jpg"
+                height="250px" width="200px">
+            <div id="cap">
+                <label for="" style="margin-left: 25px;">Coffee - Rs: 50</label>
+                <label for="" style="margin-left: 160px;">Tea - Rs: 50</label>
+                <label for="" style="margin-left: 125px;">Hot Chocolate - Rs: 100</label>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    #valentine{
+        color: brown;
+        font-family: Kristen ITC;
+        margin-left: 450px;
+    }
+    #getquote{
+        color: brown;
+        font-family: Kristen ITC;
+        margin-left: 600px;       
+    }
+    #dl{
+        color: brown;
+        font-family: Kristen ITC;
+        margin-left: 600px;
+        margin-top: 30px; 
+    }
+    #outbox{
+        margin-left: 600px;
+        margin-top: 50px;
+        color: brown;
+        font-family: Kristen ITC;
+    }
+    input{
+        border: none;
+        outline: none;
+    }
+
+    .dropdown-content{
+        display: none;
+        color: white;
+        border-radius: 25px;
+        
+        padding: 20px;
+        font-family: kristen ITC;
+        font-size: 30px;
+       position: absolute;
+       z-index: 1;
+        font-weight: 900;
+    }
+    i{
+        color:  brown;
+        font-size: 50px;
+        position: absolute;
+        top: 30px;
+        left: 120px;
+      }
+      .dropdown-content:hover .dropdown-content{
+        display: block;
+    }
+      .dropdown:hover .dropdown-content{
+        display: block;
+    }
+       a{
+    text-decoration: none;
+    color: brown;
+   }
+</style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+<button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <img src="image.jpeg" width="100" height="100"></button>
+      
+        <ul class="dropdown-menu"> 
+            <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/home.html">Home</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/ourstory.html">Our story</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/flex.html">Menu</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/offers.html">Offer</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/gallery.html">Gallery</a></li><br>
+        <li><a href="file:///C:/Users/ADMIN/Desktop/Hackathon/reachus.html">Reach us</a></li>
+    </ul>
+    </div>
+<div>
+    <h1 id="valentine" class="h1">VALENTINE'S DAY OFFERS</h1>
+    <h2 id="getquote" style="margin-top: 50px;" class="h2">GET QUOTE</h2>
+    <div id="dl">
+        <dl>
+            <dt>Birthday for an hour</dt>
+            <dd>Rs: 2000</dd>
+            <dt>Team Meeting for an hour</dt>
+            <dd>Rs: 1000</dd>
+            <dt>Proposal for an hour</dt>
+            <dd>Rs: 5000</dd>
+        </dl>
+    </div>
+    <div id="outbox">
+        <h1 style="color: brown; margin-left: px;">Calculate</h1>
+        <table class="tab">
+            <form action="">
+            <tr>
+                <td><label for="">Event   </label></td>
+                <td><select id="to" style="color: brown; border: none; font-family: Kristen ITC;">
+                    <option value="" style="color: brown; font-family: Kristen ITC;">Select an Event</option>
+                    <option value="2000" style="color: brown; font-family: Kristen ITC;">Birthday</option>
+                    <option value="5000" style="color: brown; font-family: Kristen ITC;">Proposal</option>
+                    <option value="1000"style="color: brown; font-family: Kristen ITC;">Team Meetings</option>
+                </select></td>
+                
+            </tr>
+            <tr>
+                <td><label for="" id="">Hours   </label></td>
+                <td><input type="number" id="hrs" style="color: brown; font-family: Kristen ITC;" required></td>
+            </tr>
+            </form>
+        </table>
+        </form>
+        <div><button onclick="offer()" style="color: brown; border: none; font-family: Kristen ITC; margin-top: 20px; margin-left: 50px; padding-bottom: 10px;">Calculate</button></div>
+        <label for="" id="cal"></label>
+</div>
+<script>
+    function offer(){
+        var event=document.getElementById("to").value;
+        var hour=parseInt(document.getElementById("hrs").value);
+        if(event==2000)
+        {
+            var amount=parseInt(event*hour);
+        }
+        document.getElementById("cal").innerHTML="Rs: "+amount
+
+    }
+</script>
+</body>
+</html>
